@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEYGEN SIMULATOR - Download Now</title>
+    <title>KEYGEN V20 - Download Now</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,6 @@
             position: relative;
         }
 
-        /* Escaneo animado */
         body::before {
             content: '';
             position: fixed;
@@ -80,7 +79,6 @@
             padding: 40px 20px;
         }
 
-        /* Header con decoración */
         header {
             text-align: center;
             margin-bottom: 60px;
@@ -161,7 +159,6 @@
             }
         }
 
-        /* Main content */
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -237,7 +234,6 @@
             color: #00ff00;
         }
 
-        /* Download button */
         .download-section {
             grid-column: 1 / -1;
             border: 3px solid #00ff00;
@@ -310,7 +306,6 @@
             opacity: 0.8;
         }
 
-        /* Decorative elements */
         .corner-decoration {
             position: fixed;
             font-size: 2rem;
@@ -340,7 +335,6 @@
             right: 20px;
         }
 
-        /* Footer */
         footer {
             margin-top: 60px;
             padding: 20px;
@@ -360,7 +354,6 @@
             text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -379,7 +372,6 @@
             }
         }
 
-        /* Terminal effect */
         .terminal-text {
             color: #00ff00;
             font-family: 'Courier Prime', monospace;
@@ -456,20 +448,11 @@
     </container>
 
     <script>
-        // Simulador de descarga
+
         function downloadFile() {
-            // Crear un archivo dummy para descargar
-            // En producción, reemplaza esto con tu archivo real
             const fileName = 'keygen-simulator-v2.0.exe';
+            const fileUrl = './keygen-simulator.exe';
             
-            // Opción 1: Si tienes un archivo real, usa esta ruta
-            const fileUrl = './keygen-simulator.exe'; // Cambia esto a tu archivo
-            
-            // Opción 2: Crear un archivo de ejemplo
-            // Descomenta la siguiente línea para crear un archivo de ejemplo
-            // createDummyFile();
-            
-            // Intenta descargar
             const link = document.createElement('a');
             link.href = fileUrl;
             link.download = fileName;
@@ -477,24 +460,8 @@
             link.click();
             document.body.removeChild(link);
         }
-
-        // Función para crear archivo de ejemplo (solo para demostración)
-        function createDummyFile() {
-            const content = 'KEYGEN SIMULATOR - DEMO FILE\nEste es un archivo de ejemplo para la descarga.';
-            const blob = new Blob([content], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'keygen-simulator-v2.0-demo.txt';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        }
-
-        // Efecto de cursor personalizado (opcional)
         document.addEventListener('mousemove', (e) => {
-            // Podrías agregar efectos adicionales aquí
+            //efectos adicionales
         });
     </script>
 </body>
